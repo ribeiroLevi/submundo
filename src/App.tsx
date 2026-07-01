@@ -11,7 +11,7 @@ import pumpit from "./assets/PUMP IT.mp3";
 import satisfaction from "./assets/SATISFACTION.mp3";
 import capitalismo from "./assets/CAPITALISMO.mp3";
 import inferno from "./assets/SLAYER.mp3";
-import helipa from "./assets/6b067ba2406a14283785e9240f985dce.jpg";
+import helipa from "./assets/047a36cb1b02e4e82f5ef0db511e578f.jpg";
 import palhac from "./assets/7b608ecaf11d226b70ddc8be14d3325b.jpg";
 import moto from "./assets/37e01838ce12d4485568c7d55a907625.jpg";
 import festa from "./assets/image 8.png";
@@ -19,23 +19,34 @@ import levi from "./assets/levi.png";
 import lucas from "./assets/image.png";
 import lemos from "./assets/lemos.png";
 import logo from "./assets/logo.png";
+import ultima from "./assets/0074474038410edc8d38a87070dc9eb1.jpg";
 
 function App() {
   return (
-    <div>
+    <div className="text-justify">
       <nav className="bg-hidden h-12 w-full top-0 fixed z-50">
-        <img className="w-12 mx-18 my-12" src={logo} alt="" />
+        <img
+          className="w-10 md:w-12 mx-6 my-6 md:mx-16 md:my-12"
+          src={logo}
+          alt=""
+        />
       </nav>
+
+      {/* HERO SECTION */}
       <div
-        className="h-screen w-full bg-purple-bg bg-cover bg-top flex items-center justify-center"
+        className="min-h-screen w-full bg-purple-bg bg-cover bg-top flex items-center justify-center py-20"
         style={{ backgroundImage: `url(${palhaco})` }}
       >
-        <img src={titulo} />
+        <img src={titulo} className="w-[90%] md:w-auto" alt="Título" />
       </div>
-      <div className="h-screen bg-white flex flex-col items-center gap-6 justify-center">
-        <div className="w-4/6">
-          <h1 className="text-4xl pb-6 font-bold">Funk? Submundo?</h1>
-          <p>
+
+      {/* INTRO TEXT */}
+      <div className="min-h-screen py-16 bg-white flex flex-col items-center gap-6 justify-center text-center md:text-left">
+        <div className="w-11/12 md:w-4/6">
+          <h1 className="text-3xl md:text-4xl pb-6 font-bold">
+            Funk? Submundo?
+          </h1>
+          <p className="text-base md:text-lg text-justify">
             O Funk Submundo pode ser compreendido como um movimento que
             ultrapassa os limites de um gênero musical. Embora o Funk Bruxaria
             seja uma de suas principais expressões, o termo Submundo permite
@@ -43,63 +54,86 @@ function App() {
             comportamentais e culturais que se articulam em torno da mesma
             identidade. Nesse contexto, som, imagem e experiência coletiva
             tornam-se inseparáveis, formando uma linguagem própria construída
-            nas periferias urbanas
+            nas periferias urbanas.
           </p>
         </div>
-        <div className="flex w-4/6 flex-col justify-between">
-          <img src={submundo} alt="" />
-          <p className="text-sm">Imagem: Reprodução/Juicy Santos</p>
+        <div className="flex w-11/12 md:w-4/6 flex-col justify-between items-center md:items-start">
+          <img src={submundo} alt="Submundo" className="w-full object-cover" />
+          <p className="text-xs md:text-sm mt-2 text-gray-500">
+            Imagem: Reprodução/Juicy Santos
+          </p>
         </div>
       </div>
-      <div className="flex h-[90%] bg-purple-bg justify-around items-center text-white-text overflow-hidden">
-        <div className="w-4/6 flex flex-row">
-          <div className="flex w-[45%] flex-col py-4 pt-6 gap-4 h-[90%]">
-            <h1 className="text-5xl font-bold">Visual, Horror e Palhaços</h1>
-            <div className="flex flex-col justify-around gap-6">
-              <div>
-                <p className="text-md">
-                  A estética do Funk Submundo está profundamente ligada à
-                  construção de atmosferas de tensão, estranhamento e
-                  maximalismo sonoro.
-                  <br />
-                  <br />
-                  No Funk Bruxaria, o horror aparece como uma das principais
-                  referências visuais e simbólicas. Filmes de terror, samples de
-                  jogos de suspense, cenários apocalípticos, monstros, palhaços
-                  e elementos macabros são frequentemente incorporados ao
-                  imaginário do gênero em conjunto com a estética dos bailes
-                  funks da zona paulista.
-                  <br />
-                  <br />
-                  Essa aproximação com o terror não surge apenas como um recurso
-                  decorativo. Ela dialoga com a proposta de criar uma
-                  experiência intensa e impactante, capaz de provocar sensações
-                  semelhantes às produzidas pela própria sonoridade do gênero.
-                  <br />
-                  <br />O horror funciona como uma representação visual do som
-                  agressivo, distorcido e imprevisível que caracteriza a
-                  Bruxaria, trazendo o posicionamento claro de que esse gênero
-                  não visa e não se molda ao mainstream.{" "}
-                </p>
-              </div>
+
+      {/* VISUAL, HORROR E PALHAÇOS */}
+      <div className="flex min-h-screen md:min-h-[90vh] py-12 bg-purple-bg justify-center items-center text-white-text overflow-hidden">
+        <div className="w-11/12 md:w-4/6 flex flex-col md:flex-row gap-8 md:gap-12 md:items-stretch">
+          {/* ESQUERDA - TEXTO + IMAGEM MENOR DE COMPENSAÇÃO */}
+          <div className="flex flex-1 flex-col gap-6">
+            {/* BLOCO DE TEXTO */}
+            <div className="flex flex-col gap-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left">
+                Visual, Horror e Palhaços
+              </h1>
+
+              <p className="text-sm md:text-base text-justify">
+                A estética do Funk Submundo está profundamente ligada à
+                construção de atmosferas de tensão, estranhamento e maximalismo
+                sonoro.
+                <br />
+                <br />
+                No Funk Bruxaria, o horror aparece como uma das principais
+                referências visuais e simbólicas. Filmes de terror, samples de
+                jogos de suspense, cenários apocalípticos, monstros, palhaços e
+                elementos macabros são frequentemente incorporados ao imaginário
+                do gênero em conjunto com a estética dos bailes funks da zona
+                paulista.
+                <br />
+                <br />
+                Essa aproximação com o terror não surge apenas como um recurso
+                decorativo. Ela dialoga com a proposta de criar uma experiência
+                intensa e impactante, capaz de provocar sensações semelhantes às
+                produzidas pela própria sonoridade do gênero.
+                <br />
+                <br />O horror funciona como uma representação visual do som
+                agressivo, distorcido e imprevisível que caracteriza a Bruxaria,
+                trazendo o posicionamento claro de que esse gênero não visa e
+                não se molda ao mainstream.
+              </p>
+            </div>
+
+            {/* IMAGEM SECUNDÁRIA (MENOR / RECORTADA) */}
+            {/* Removemos o flex-1 e adicionamos uma altura fixa de 120px */}
+            <div className="hidden md:block relative mt-auto w-full h-[480px]">
+              <img
+                src={ultima}
+                alt="Complemento Visual"
+                className="w-full h-full object-cover rounded-lg object-center"
+              />
+              <p className="absolute bottom-2 right-2 text-[10px] md:text-xs text-white/80 bg-black/60 px-2 py-1 rounded">
+                Imagem: Reprodução/Milena Nascimento - MILE LAB
+              </p>
             </div>
           </div>
-          {/* RIGHT */}
-          <div className="w-[55%] flex items-center">
+
+          {/* DIREITA - IMAGEM PRINCIPAL */}
+          <div className="flex-1 flex relative">
             <img
               src={palhacas}
-              alt=""
-              className="h-full w-full py-8 pl-8 object-cover"
+              alt="Palhaças"
+              className="w-full h-full object-cover rounded-lg"
             />
-            <p className="absolute bottom-2 right-2 text-xs text-white/80">
-              Imagem: Reprodução/Milena Nascimento
+            <p className="absolute bottom-2 right-2 text-[10px] md:text-xs text-white/80 bg-black/60 px-2 py-1 rounded">
+              Imagem: Reprodução/Milena Nascimento - MILE LAB
             </p>
           </div>
         </div>
       </div>
-      <div className="h-screen bg-white flex flex-col items-center gap-6 justify-center">
-        <div className="w-4/6">
-          <p>
+
+      {/* CONTINUAÇÃO TEXTO PALHAÇOS */}
+      <div className="min-h-screen py-16 bg-white flex flex-col items-center gap-10 justify-center">
+        <div className="w-11/12 md:w-4/6 text-center md:text-left">
+          <p className="text-base md:text-lg text-justify">
             Nesse contexto, a figura do palhaço ganha destaque.
             <br /> <br />
             Tradicionalmente associada à infância, ao entretenimento e à
@@ -123,42 +157,49 @@ function App() {
             simbólico onde realidade, fantasia, horror e festa coexistem.
           </p>
         </div>
-        <div className="w-4/6 flex flex-row items-center gap-3 justify-center">
-          <div className="flex-1">
+        <div className="w-11/12 md:w-4/6 flex flex-col md:flex-row items-center gap-6 md:gap-3 justify-center">
+          <div className="flex-1 w-full">
             <img src={maga} alt="" className="h-full w-full object-cover" />
-            <p className="text-sm">
+            <p className="text-xs md:text-sm mt-2 text-gray-500">
               Imagem: Reprodução/Milena Nascimento - MILE LAB
             </p>
           </div>
 
-          <div className="flex-1">
+          <div className="flex-1 w-full">
             <img src={palhacos} alt="" className="h-full w-full object-cover" />
-            <p className="text-sm">
+            <p className="text-xs md:text-sm mt-2 text-gray-500">
               Imagem: Reprodução/Milena Nascimento - MILE LAB
             </p>
           </div>
         </div>
       </div>
-      <section className="h-screen w-full">
+
+      {/* SEC 4 IMAGE */}
+      <section className="h-64 md:h-screen w-full">
         <img src={sec4} alt="" className="h-full w-full object-cover" />
       </section>
 
-      <div className=" py-8 bg-white flex flex-col items-center gap-6 justify-center">
-        <div className="w-4/6">
-          <h1 className="text-4xl pb-6 font-bold">O SOM DO APOCALIPSE</h1>
-          <p>
+      {/* AUDIO SECTION */}
+      <div className="py-16 bg-white flex flex-col items-center gap-10 justify-center">
+        <div className="w-11/12 md:w-4/6 text-center md:text-left">
+          <h1 className="text-3xl md:text-4xl pb-6 font-bold">
+            O SOM DO APOCALIPSE
+          </h1>
+          <p className="text-base md:text-lg text-justify">
             A sonoridade do Funk Submundo, especialmente do Funk Bruxaria, é
             marcada pela experimentação. Diferentemente de vertentes mais
             próximas do mainstream, a Bruxaria adota uma abordagem
             propositalmente pesada, agressiva e distorcida.
           </p>
         </div>
-        <div className="flex w-4/6 flex-col justify-between">
-          <img src={submundo} alt="" />
-          <p className="text-sm">Imagem: Reprodução/Juicy Santos</p>
+        <div className="flex w-11/12 md:w-4/6 flex-col justify-between">
+          <img src={submundo} alt="" className="w-full object-cover" />
+          <p className="text-xs md:text-sm mt-2 text-gray-500">
+            Imagem: Reprodução/Juicy Santos
+          </p>
         </div>
-        <div className="w-4/6">
-          <p>
+        <div className="w-11/12 md:w-4/6 text-center md:text-left">
+          <p className="text-base md:text-lg text-justify">
             O Funk Bruxaria, para além de unir conceitos abstratos e
             abrangentes, também é complexo de estabelecer um marco sonoro ideal
             ou uma sonoridade que represente toda a diversidade.
@@ -174,9 +215,13 @@ function App() {
             Para isso, apresentamos: Aquecimento PUMP IT.
           </p>
         </div>
-        <AudioVisualizer src={pumpit} nome="Aquecimento PUMP IT" />
-        <div className="w-4/6">
-          <p>
+
+        <div className="w-11/12 md:w-4/6">
+          <AudioVisualizer src={pumpit} nome="Aquecimento PUMP IT" />
+        </div>
+
+        <div className="w-11/12 md:w-4/6 text-center md:text-left">
+          <p className="text-base md:text-lg text-justify">
             Antes de adentrarmos no Submundo, decidimos mostrar um pouco das
             bases ritmicas do gênero.
             <br /> <br />
@@ -198,9 +243,13 @@ function App() {
             SATISFAÇÃO
           </p>
         </div>
-        <AudioVisualizer src={satisfaction} nome="SATISFAÇÃO" />
-        <div className="w-4/6">
-          <p>
+
+        <div className="w-11/12 md:w-4/6">
+          <AudioVisualizer src={satisfaction} nome="SATISFAÇÃO" />
+        </div>
+
+        <div className="w-11/12 md:w-4/6 text-center md:text-left">
+          <p className="text-base md:text-lg text-justify">
             Nesta faixa, utilizamos outra sample clássica: Satisfaction de Benny
             Benassi. Faixa clássica da House Music dos anos 2000, é dançante e
             sensual, em alguma medida. Principalmente quando aliada ao seu
@@ -226,9 +275,13 @@ function App() {
             FACAS, FOICES E FORCADOS
           </p>
         </div>
-        <AudioVisualizer src={capitalismo} nome="FACAS, FOICES E FORCADOS" />
-        <div className="w-4/6">
-          <p>
+
+        <div className="w-11/12 md:w-4/6">
+          <AudioVisualizer src={capitalismo} nome="FACAS, FOICES E FORCADOS" />
+        </div>
+
+        <div className="w-11/12 md:w-4/6 text-center md:text-left">
+          <p className="text-base md:text-lg text-justify">
             Esta faixa já é mais sombria. A sample original, "Rasamat Usratuna"
             de Nasheed, fala sobre a união da família e amor. Contudo, nós a
             subvertemos em uma música para falar sobre o deturpação do
@@ -241,28 +294,33 @@ function App() {
             faixa "Passinho do Romano", samples em árabe são frequentemente
             utilizadas em faixas do gênero.
             <br /> <br />
-            Nesta música, também aplicamos de forma mais insiva o uso dos tuíns
-            por meio dos assobios e o uso de sintetizadores mais graves para
-            criar a ambiência.
+            Nesta música, também aplicamos de forma mais incisiva o uso dos
+            tuíns por meio dos assobios e o uso de sintetizadores mais graves
+            para criar a ambiência.
             <br /> <br />
             Por fim, apresentamos nossa última faixa: CULTO DO APOCALIPSE.
           </p>
         </div>
-        <AudioVisualizer src={inferno} nome="CULTO DO APOCALIPSE" />
-        <div className="w-4/6">
-          <p>
+
+        <div className="w-11/12 md:w-4/6">
+          <AudioVisualizer src={inferno} nome="CULTO DO APOCALIPSE" />
+        </div>
+
+        <div className="w-11/12 md:w-4/6 text-center md:text-left">
+          <p className="text-base md:text-lg text-justify">
             Fortemente influenciada por músicas do DJ d.silvestre, ela utiliza
             sintetizadores graves, assobios agudos e risadas sinistras para
             construir uma ambientação sinistra e energética.
             <br /> <br />
             Com estas quatro faixas, acreditamos conseguir passar um panôrama do
             que é o Funk Submundo e seus principais elementos. Todas essas
-            faixar estão disponíveis no Soundcloud, link abaixo.
+            faixas estão disponíveis no Soundcloud, link abaixo.
           </p>
         </div>
 
-        <div className="flex w-full justify-center">
-          <div className="w-4/6">
+        {/* YOUTUBE IFRAME */}
+        <div className="flex w-full justify-center mt-6">
+          <div className="w-11/12 md:w-4/6">
             <div className="relative aspect-video overflow-hidden rounded-xl shadow-lg">
               <iframe
                 className="absolute inset-0 h-full w-full"
@@ -276,22 +334,32 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="h-screen bg-purple-bg text-white-text flex flex-col items-center gap-6 justify-center">
-          <div className="w-4/6">
-            <h1 className="text-4xl pb-6 font-bold">Entranhas do Submundo</h1>
-            <p>
+
+        {/* ENTRANHAS DO SUBMUNDO */}
+        <div className="min-h-screen w-full bg-purple-bg text-white-text flex flex-col items-center gap-8 justify-center py-16 mt-16">
+          <div className="w-11/12 md:w-4/6 text-center md:text-left">
+            <h1 className="text-3xl md:text-4xl pb-6 font-bold">
+              Entranhas do Submundo
+            </h1>
+            <p className="text-base md:text-lg text-justify">
               O Funk Submundo possui raízes profundas nas periferias da Zona Sul
               de São Paulo, especialmente em territórios como Heliópolis e
               Mandela e nos bailes de rua dessas comunidades que marcaram o
               desenvolvimento do Funk Bruxaria.
             </p>
           </div>
-          <div className="flex w-4/6 flex-col justify-between">
-            <img src={helipa} alt="" />
-            <p className="text-sm">Imagem: Reprodução/Aloha</p>
+          <div className="flex w-11/12 md:w-4/6 flex-col justify-between items-center md:items-start">
+            <img
+              src={helipa}
+              alt=""
+              className="w-full object-cover h-[630px]"
+            />
+            <p className="text-xs md:text-sm mt-2 text-white/70">
+              Imagem: Reprodução/Aloha
+            </p>
           </div>
-          <div className="w-4/6">
-            <p>
+          <div className="w-11/12 md:w-4/6 text-center md:text-left">
+            <p className="text-base md:text-lg text-justify">
               Segundo os próprios artistas do movimento, a ideia do termo
               "bruxaria" para nomear o gênero surge da mistura de elementos
               (sons) diversos em um mesmo espaço de criação (computador),
@@ -306,9 +374,10 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="h-screen bg-white flex flex-col items-center gap-6 justify-center">
-          <div className="w-4/6">
-            <p>
+
+        <div className="min-h-screen w-full bg-white flex flex-col items-center gap-10 justify-center py-16">
+          <div className="w-11/12 md:w-4/6 text-center md:text-left">
+            <p className="text-base md:text-lg text-justify">
               A noção de submundo também está ligada ao contexto social
               experienciado nessas regiões.
               <br />
@@ -324,27 +393,34 @@ function App() {
               <br />
               Ao mesmo tempo, propõe uma desconexão da realidade, ao inundar
               seus cérebros de sonoridades extremas e agressivas, colocando-os
-              em estado de transe. 
+              em estado de transe.
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-8 w-4/6 flex-col justify-between">
-            <div>
-              <img src={moto} alt="" />
-              <p className="text-sm">Imagem: Reprodução/MILE LAB</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-11/12 md:w-4/6 flex-col justify-between">
+            <div className="w-full">
+              <img src={moto} alt="" className="w-full object-cover" />
+              <p className="text-xs md:text-sm mt-2 text-gray-500">
+                Imagem: Reprodução/MILE LAB
+              </p>
             </div>
-            <div>
-              <img src={umbrella} alt="" />
-              <p className="text-sm">Imagem: Reprodução/MILE LAB</p>
+            <div className="w-full">
+              <img src={umbrella} alt="" className="w-full object-cover" />
+              <p className="text-xs md:text-sm mt-2 text-gray-500">
+                Imagem: Reprodução/MILE LAB
+              </p>
             </div>
-            <div>
-              <img src={palhac} alt="" />
-              <p className="text-sm">Imagem: Reprodução/MILE LAB</p>
+            <div className="w-full sm:col-span-2 md:col-span-1">
+              <img src={palhac} alt="" className="w-full object-cover" />
+              <p className="text-xs md:text-sm mt-2 text-gray-500">
+                Imagem: Reprodução/MILE LAB
+              </p>
             </div>
           </div>
         </div>
-        <div className="h-screen bg-purple-bg text-white-text flex flex-col items-center gap-6 justify-center">
-          <div className="w-4/6">
-            <p>
+
+        <div className="min-h-screen w-full bg-purple-bg text-white-text flex flex-col items-center gap-10 justify-center py-16">
+          <div className="w-11/12 md:w-4/6 text-center md:text-left">
+            <p className="text-base md:text-lg text-justify">
               Diferente das vertentes do funk mainstream que têm em sua dança
               uma presença mais pautada em aspectos sensuais, as danças nos
               bailes de Bruxaria são marcadas principalmente por movimentos mais
@@ -352,15 +428,17 @@ function App() {
               identidade própria e distinta de qualquer outro gênero.
             </p>
           </div>
-          <div className="flex w-4/6 flex-col justify-between">
-            <img src={festa} alt="" />
-            <p className="text-sm">Imagem: Divulgação/Submundo808</p>
+          <div className="flex w-11/12 md:w-4/6 flex-col justify-between items-center md:items-start">
+            <img src={festa} alt="" className="w-full object-cover" />
+            <p className="text-xs md:text-sm mt-2 text-white/70">
+              Imagem: Divulgação/Submundo808
+            </p>
           </div>
-          <div className="w-4/6">
-            <p>
+          <div className="w-11/12 md:w-4/6 text-center md:text-left">
+            <p className="text-base md:text-lg text-justify">
               Outro aspecto importante do gênero é a apropriação criativa da
               tecnologia. Softwares como o FL Studio permitiram que produtores
-              desenvolvessem métodos próprios de criação musical baseados em
+              desenvolvsem métodos próprios de criação musical baseados em
               montagem, experimentação e manipulação direta de sons. Essa
               prática contribuiu para o surgimento de uma gramática sonora
               própria, construída fora dos modelos tradicionais de ensino
@@ -379,149 +457,85 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="bg-white-bg py-24 w-4/6">
-          <div className="mx-auto grid w-full grid-cols-1 gap-16 lg:grid-cols-2">
+
+        {/* FOOTER - REFERÊNCIAS E FICHA */}
+        <div className="bg-white-bg py-16 md:py-24 w-11/12 md:w-4/6">
+          <div className="mx-auto grid w-full grid-cols-1 gap-12 lg:grid-cols-2">
             {/* REFERÊNCIAS */}
             <section>
-              <h1 className="mb-8 text-4xl font-bold">Referências</h1>
+              <h1 className="mb-6 md:mb-8 text-3xl md:text-4xl font-bold text-center lg:text-left">
+                Referências
+              </h1>
 
-              <ul className="space-y-4 text-lg">
-                <li>
-                  <a
-                    href="https://portalveredas.com.br/o-funk-bruxaria-como-expoente-da-musica-experimental/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
+              <ul className="space-y-4 text-base md:text-lg">
+                {[
+                  {
+                    title: "Portal Veredas",
+                    url: "https://portalveredas.com.br/o-funk-bruxaria-como-expoente-da-musica-experimental/",
+                  },
+                  {
+                    title: "G1",
+                    url: "https://g1.globo.com/sp/sao-paulo/noticia/2024/05/23/bruxaria-e-ritmado-funk-varia-de-acordo-com-regiao-da-cidade-de-sp-entenda-as-diferencas.ghtml",
+                  },
+                  {
+                    title: "Billboard Brasil",
+                    url: "https://billboard.com.br/dumbledore-da-favela-conheca-dj-k-o-bruxo/",
+                  },
+                  {
+                    title: "TAB UOL",
+                    url: "https://tab.uol.com.br/edicao/dj-k-funk-bruxaria/",
+                  },
+                  {
+                    title: "Amarello",
+                    url: "https://amarello.com.br/2023/06/cultura/cientista-do-grave/",
+                  },
+                  {
+                    title: "The Guardian",
+                    url: "https://www.theguardian.com/music/2023/nov/14/if-it-doesnt-smell-like-funk-somethings-wrong-with-your-recipe-brazilian-baile-funk-goes-global-again",
+                  },
+                  {
+                    title: "Terra",
+                    url: "https://www.terra.com.br/visao-do-corre/quem-e-o-dj-k-jovem-de-diadema-esta-ganhando-o-mundo-com-seu-funkbruxaria,1fb3be082b07603645405ab45d5725a2yvx6yvtv.html",
+                  },
+                  {
+                    title: "MonkeyBuzz",
+                    url: "https://monkeybuzz.com.br/materias/tuin-montagens-no-fruity-loops-e-som-de-passarinhos-no-estudio-com-dj-k-e-jlz/",
+                  },
+                  {
+                    title: "Instagram",
+                    url: "https://www.instagram.com/reel/DZdgbu-v2uQ/",
+                  },
+                ].map((ref, idx) => (
+                  <li
+                    key={idx}
+                    className="flex flex-col sm:flex-row sm:items-center"
                   >
-                    Portal Veredas
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
-
-                <li>
-                  <a
-                    href="https://g1.globo.com/sp/sao-paulo/noticia/2024/05/23/bruxaria-e-ritmado-funk-varia-de-acordo-com-regiao-da-cidade-de-sp-entenda-as-diferencas.ghtml"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
-                  >
-                    G1
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
-
-                <li>
-                  <a
-                    href="https://billboard.com.br/dumbledore-da-favela-conheca-dj-k-o-bruxo/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
-                  >
-                    Billboard Brasil
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
-
-                <li>
-                  <a
-                    href="https://tab.uol.com.br/edicao/dj-k-funk-bruxaria/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
-                  >
-                    TAB UOL
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
-
-                <li>
-                  <a
-                    href="https://amarello.com.br/2023/06/cultura/cientista-do-grave/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
-                  >
-                    Amarello
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.theguardian.com/music/2023/nov/14/if-it-doesnt-smell-like-funk-somethings-wrong-with-your-recipe-brazilian-baile-funk-goes-global-again"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
-                  >
-                    The Guardian
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.terra.com.br/visao-do-corre/quem-e-o-dj-k-jovem-de-diadema-esta-ganhando-o-mundo-com-seu-funkbruxaria,1fb3be082b07603645405ab45d5725a2yvx6yvtv.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
-                  >
-                    Terra
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
-
-                <li>
-                  <a
-                    href="https://monkeybuzz.com.br/materias/tuin-montagens-no-fruity-loops-e-som-de-passarinhos-no-estudio-com-dj-k-e-jlz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
-                  >
-                    MonkeyBuzz
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.instagram.com/reel/DZdgbu-v2uQ/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
-                  >
-                    Instagram
-                  </a>
-                  <span className="ml-2 text-gray-500">
-                    — Último acesso: 22/06/2026
-                  </span>
-                </li>
+                    <a
+                      href={ref.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-violet-700 underline underline-offset-4 transition hover:text-violet-900"
+                    >
+                      {ref.title}
+                    </a>
+                    <span className="sm:ml-2 text-sm text-gray-500 mt-1 sm:mt-0">
+                      — Último acesso: 22/06/2026
+                    </span>
+                  </li>
+                ))}
               </ul>
             </section>
 
             {/* FICHA EDITORIAL */}
             <section>
-              <h1 className="mb-8 text-4xl font-bold">Ficha Editorial</h1>
+              <h1 className="mb-6 md:mb-8 text-3xl md:text-4xl font-bold text-center lg:text-left">
+                Ficha Editorial
+              </h1>
 
-              <div className="space-y-8">
+              <div className="space-y-6 md:space-y-8">
                 {/* Pessoa 1 */}
-                <div className="flex items-center gap-6 rounded-2xl border border-gray-200 p-4">
-                  <div className="h-24 w-24 overflow-hidden rounded-full bg-gray-200">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-6 rounded-2xl border border-gray-200 p-4">
+                  <div className="h-20 w-20 sm:h-24 sm:w-24 shrink-0 overflow-hidden rounded-full bg-gray-200">
                     <img
                       src={levi}
                       alt="Levi Ribeiro"
@@ -529,20 +543,19 @@ function App() {
                     />
                   </div>
 
-                  <div>
-                    <h2 className="text-xl font-semibold">
+                  <div className="flex flex-col justify-center sm:mt-2">
+                    <h2 className="text-lg md:text-xl font-semibold">
                       Levi "Loops" Ribeiro
                     </h2>
-
-                    <p className="text-gray-600">
+                    <p className="text-sm md:text-base text-gray-600">
                       Desenvolvimento e Produção Musical
                     </p>
                   </div>
                 </div>
 
                 {/* Pessoa 2 */}
-                <div className="flex items-center gap-6 rounded-2xl border border-gray-200 p-4">
-                  <div className="h-24 w-24 overflow-hidden rounded-full bg-gray-200">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-6 rounded-2xl border border-gray-200 p-4">
+                  <div className="h-20 w-20 sm:h-24 sm:w-24 shrink-0 overflow-hidden rounded-full bg-gray-200">
                     <img
                       src={lemos}
                       alt="João Pedro Lemos"
@@ -550,18 +563,19 @@ function App() {
                     />
                   </div>
 
-                  <div>
-                    <h2 className="text-xl font-semibold">
+                  <div className="flex flex-col justify-center sm:mt-2">
+                    <h2 className="text-lg md:text-xl font-semibold">
                       João Pedro "JP" Lemos
                     </h2>
-
-                    <p className="text-gray-600">Pesquisa e Redação</p>
+                    <p className="text-sm md:text-base text-gray-600">
+                      Pesquisa e Redação
+                    </p>
                   </div>
                 </div>
 
                 {/* Pessoa 3 */}
-                <div className="flex items-center gap-6 rounded-2xl border border-gray-200 p-4">
-                  <div className="h-24 w-24 overflow-hidden rounded-full bg-gray-200">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 sm:gap-6 rounded-2xl border border-gray-200 p-4">
+                  <div className="h-20 w-20 sm:h-24 sm:w-24 shrink-0 overflow-hidden rounded-full bg-gray-200">
                     <img
                       src={lucas}
                       alt="Lucas Ryan Fernandes"
@@ -569,12 +583,11 @@ function App() {
                     />
                   </div>
 
-                  <div>
-                    <h2 className="text-xl font-semibold">
+                  <div className="flex flex-col justify-center sm:mt-2">
+                    <h2 className="text-lg md:text-xl font-semibold">
                       Lucas "O Bruxo" Ryan
                     </h2>
-
-                    <p className="text-gray-600">
+                    <p className="text-sm md:text-base text-gray-600">
                       Diagramação e Design Editorial
                     </p>
                   </div>

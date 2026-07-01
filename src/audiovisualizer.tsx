@@ -22,7 +22,6 @@ export default function AudioVisualizer({ src, nome }: AudioVisualizerProps) {
     if (!audio) return;
 
     const context = new AudioContext();
-
     const analyser = context.createAnalyser();
 
     analyser.fftSize = 2048;
@@ -45,7 +44,6 @@ export default function AudioVisualizer({ src, nome }: AudioVisualizerProps) {
 
       for (let i = 0; i < samples; i++) {
         const value = (buffer[i * step] - 128) / 128;
-
         waveform.push(value);
       }
 
@@ -87,7 +85,6 @@ export default function AudioVisualizer({ src, nome }: AudioVisualizerProps) {
 
     points.forEach((point, index) => {
       const x = (index / (points.length - 1)) * WIDTH;
-
       const y = CENTER - point * 35;
 
       if (index === 0) {
@@ -113,21 +110,37 @@ export default function AudioVisualizer({ src, nome }: AudioVisualizerProps) {
   };
 
   return (
-    <div className="flex w-8/11 max-w-5xl flex-col items-start gap-4 rounded-3xl bg-white p-10">
+    <div className="flex w-full text-justify max-w-5xl flex-col items-start gap-4 md:gap-6 rounded-[2rem] bg-white p-6 md:p-10 mx-auto">
       <audio ref={audioRef} src={src} preload="auto" hidden />
-      <div className="flex w-full flex-row justify-between items-center">
-        <h1 className="text-4xl font-bold">{nome}</h1>
+      <div className="flex w-full flex-row justify-between items-center gap-4">
+        <h1 className="text-2xl md:text-4xl font-bold break-words w-full">
+          {nome}
+        </h1>
         <button
           onClick={toggleAudio}
-          className="flex h-15 w-15 items-center justify-center rounded-full bg-violet-600 text-white transition hover:scale-105 active:scale-95"
+          className="flex h-14 w-14 md:h-16 md:w-16 shrink-0 items-center justify-center rounded-full bg-violet-600 text-white transition hover:scale-105 active:scale-95"
         >
           {isPlaying ? (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <svg
+              width="24"
+              height="24"
+              md:width="28"
+              md:height="28"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
               <rect x="5" y="4" width="5" height="16" rx="1" />
               <rect x="14" y="4" width="5" height="16" rx="1" />
             </svg>
           ) : (
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <svg
+              width="28"
+              height="28"
+              md:width="32"
+              md:height="32"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
               <path d="M8 5v14l11-7z" />
             </svg>
           )}
@@ -136,15 +149,16 @@ export default function AudioVisualizer({ src, nome }: AudioVisualizerProps) {
       <svg
         width="100%"
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-        className="overflow-visible"
+        className="overflow-visible mt-2"
       >
         <path
           d={path}
           fill="none"
-          stroke="black"
+          stroke="#000000" // Forçado o código hexadecimal ou cor do tema para contrastar bem
           strokeWidth="3"
           strokeLinecap="round"
           strokeLinejoin="round"
+          className="transition-all duration-75 ease-linear"
         />
       </svg>
     </div>
