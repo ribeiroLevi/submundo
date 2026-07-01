@@ -121,26 +121,12 @@ export default function AudioVisualizer({ src, nome }: AudioVisualizerProps) {
           className="flex h-14 w-14 md:h-16 md:w-16 shrink-0 items-center justify-center rounded-full bg-violet-600 text-white transition hover:scale-105 active:scale-95"
         >
           {isPlaying ? (
-            <svg
-              width="24"
-              height="24"
-              md:width="28"
-              md:height="28"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <rect x="5" y="4" width="5" height="16" rx="1" />
               <rect x="14" y="4" width="5" height="16" rx="1" />
             </svg>
           ) : (
-            <svg
-              width="28"
-              height="28"
-              md:width="32"
-              md:height="32"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8 5v14l11-7z" />
             </svg>
           )}
