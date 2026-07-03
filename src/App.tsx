@@ -20,7 +20,8 @@ import lucas from "./assets/image.png";
 import lemos from "./assets/lemos.png";
 import logo from "./assets/logo.png";
 import ultima from "./assets/0074474038410edc8d38a87070dc9eb1.jpg";
-
+import seta from "./assets/arrow-down.png";
+import submundo2 from "./assets/images.jpg";
 function App() {
   return (
     <div className="text-justify">
@@ -33,11 +34,16 @@ function App() {
       </nav>
 
       {/* HERO SECTION */}
-      <div
-        className="min-h-screen w-full bg-purple-bg bg-cover bg-top flex items-center justify-center py-20"
-        style={{ backgroundImage: `url(${palhaco})` }}
-      >
-        <img src={titulo} className="w-[90%] md:w-auto" alt="Título" />
+      <div>
+        <div
+          className="min-h-screen w-full bg-purple-bg bg-cover bg-top flex flex-col items-center justify-center py-20 "
+          style={{ backgroundImage: `url(${palhaco})` }}
+        >
+          <img src={titulo} className="w-[90%] md:w-auto" alt="Título" />
+        </div>
+        <div className="w-full flex items-center justify-center">
+          <img src={seta} className="-mt-16" alt="" />
+        </div>
       </div>
 
       {/* INTRO TEXT */}
@@ -193,9 +199,9 @@ function App() {
           </p>
         </div>
         <div className="flex w-11/12 md:w-4/6 flex-col justify-between">
-          <img src={submundo} alt="" className="w-full object-cover" />
+          <img src={submundo2} alt="" className="w-full object-cover" />
           <p className="text-xs md:text-sm mt-2 text-gray-500">
-            Imagem: Reprodução/Juicy Santos
+            Imagem: Reprodução/Folha
           </p>
         </div>
         <div className="w-11/12 md:w-4/6 text-center md:text-left">
@@ -207,10 +213,11 @@ function App() {
             Pensando nisso, nossa redação produziu 4 músicas que, gradualmente,
             apresentam elementos fundamentais para o gênero. Compreendemos que:
             dependendo de quem escute, da região ou do artista que mais goste,
-            essas músicas podem nem parecer Funk Bruxaria ou simplesmente serem
-            considerados de outro gênero. Ao mesmo tempo, muitos podem
+            essas músicas podem sequer parecer Funk Bruxaria ou simplesmente
+            serem consideradas de outro gênero. Ao mesmo tempo, muitos podem
             considerar esse gênero extremo e desgostar desde início. Portanto,
-            decidimos comecar com uma música mais leve e ir subindo o nível.
+            decidimos comecar com uma música mais leve e ir gradativamente nos
+            aproximando do gênero.
             <br /> <br />
             Para isso, apresentamos: Aquecimento PUMP IT.
           </p>
@@ -226,12 +233,12 @@ function App() {
             bases ritmicas do gênero.
             <br /> <br />
             "Aquecimento PUMP IT" utiliza sample de "Pump It" do Black Eyed Peas
-            (que já é uma sample de "Misirlou" do Dick Dale and His Del-Tones de
-            1962) e também do "Volt Mix" de DJ Battery Brain. A primeira é uma
-            sample clássica de Surf Rock, comunmente utilizada em músicas mais
-            "pra cima" e divertidas. O "Volt Mix", por outro lado, é dos
-            primórdios do Funk brasileiro e, nos anos 90, foi amplamente
-            utilizada pelo Furacão 2000, por exemplo.
+            (que, por sua vez, também sampleia uma música: "Misirlou" do Dick
+            Dale and His Del-Tones, 1962) e também do "Volt Mix" de DJ Battery
+            Brain. A primeira é uma sample clássica de Surf Rock, comumente
+            utilizada em músicas mais "pra cima" e divertidas. O "Volt Mix", por
+            outro lado, remonta aos primórdios do Funk brasileiro e, nos anos
+            90, foi amplamente utilizada pelo grupo Furacão 2000, por exemplo.
             <br /> <br />
             Entretanto, entre os elementos mais característicos do Funk
             Bruxaria, estão: samples de filmes de terror e suspense, como
@@ -250,15 +257,16 @@ function App() {
 
         <div className="w-11/12 md:w-4/6 text-center md:text-left">
           <p className="text-base md:text-lg text-justify">
-            Nesta faixa, utilizamos outra sample clássica: Satisfaction de Benny
-            Benassi. Faixa clássica da House Music dos anos 2000, é dançante e
-            sensual, em alguma medida. Principalmente quando aliada ao seu
-            vídeo-clipe, outro clássico. Entretanto, na nossa adaptação,
-            tentamos deixar ela mais opressiva. Com agudos gritantes (também
-            chamados de "tuíns"), sintetizadores e graves pesados (referêciados
-            como "estoura tímpano" ou "destrói fone"), estamos nos aproximando à
-            sonoridade do Submundo.
-            <br /> <br /> Com ela, também demonstramos que é influência de
+            Nesta faixa, utilizamos outra sample: "Satisfaction" de Benny
+            Benassi. Faixa clássica da EDM e House Music dos anos 2000, é
+            dançante e sensual, ao mesmo tempo que é tensa e robótica.
+            Principalmente quando aliada ao seu vídeo-clipe, outro clássico.
+            Entretanto, na nossa adaptação, tentamos deixar ela mais opressiva.
+            Com agudos gritantes (também chamados de "tuíns"), sintetizadores e
+            graves pesados (referêciados como "estoura tímpano" ou "destrói
+            fone" pelos artistas da cena). Com esta faixa, estamos nos
+            aproximando à sonoridade do Submundo.
+            <br /> <br /> Com ela, também demonstramos que a influência de
             outros gêneros é evidente. DJ K descreve a Bruxaria como uma "rave
             da favela", resultado da mistura entre funk, rock, música eletrônica
             e elementos experimentais. Samples de bandas de rock, estruturas
@@ -292,7 +300,17 @@ function App() {
             Passando do significado por trás da faixa, o uso de samples em árabe
             é um recursos comum no mundo do funk. Datando dos anos 2010, com a
             faixa "Passinho do Romano", samples em árabe são frequentemente
-            utilizadas em faixas do gênero.
+            utilizadas em faixas do gênero. Uma faixa mais recente que utiliza
+            samples em árabe é: "HOJE EU VOU COMER NOVINHA" de Megabaile das
+            Areias, 2026.
+            <br /> <br />
+            Existem diversas motivações por trás disso, entre elas: a associação
+            do Oriente Médio à luxo, riqueza e mistério; timbres e{" "}
+            <i>grooves</i> fora do padrão, utilizando instrumentos e cânticos
+            tradicionais. Outro fator importante nesta troca cultural, é o fato
+            de que São Paulo concentra a maior comunidade árabe do Brasil.
+            Portanto, existe um contexto de troca e efervecência cultural entre
+            brasileiros e árabes.
             <br /> <br />
             Nesta música, também aplicamos de forma mais incisiva o uso dos
             tuíns por meio dos assobios e o uso de sintetizadores mais graves
@@ -314,7 +332,7 @@ function App() {
             <br /> <br />
             Com estas quatro faixas, acreditamos conseguir passar um panôrama do
             que é o Funk Submundo e seus principais elementos. Todas essas
-            faixas estão disponíveis no Soundcloud, link abaixo.
+            faixas estão disponíveis no Youtube, link abaixo.
           </p>
         </div>
 
@@ -394,6 +412,24 @@ function App() {
               Ao mesmo tempo, propõe uma desconexão da realidade, ao inundar
               seus cérebros de sonoridades extremas e agressivas, colocando-os
               em estado de transe.
+              <br />
+              <br />
+              Também é interessante perceber como o ambiente molda as
+              vestimentos e indumentárias utilizadas pelos frequentadores.
+              Constantemente vistos de casacos, roupas e óculos esportivos e
+              guarda-chuvas, suas vestimentas dão dicas do ambiente onde os
+              bailes são realizados.
+              <br />
+              <br />
+              São Paulo é uma cidade chuvosa, o clima é frio durante cerca de 5
+              meses. Dias nublados, chuva e garoa fina também marcam os entornos
+              dos bailes. Mesmo assim eles não paravam. Então, os frequentadores
+              tornaram a necessidade de guarda-chuvas e casacos em expressão
+              artística. Guarda-chuvas que estampam marcas como Oakley e Nike se
+              tornaram comuns, junto com casacos corta-vento (material
+              impermeável) esportivo. Isso demonstra que um item necessário para
+              o bem estar acaba se tornando e refletindo: arte, propósito e
+              personalidade.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-11/12 md:w-4/6 flex-col justify-between">
@@ -421,10 +457,10 @@ function App() {
         <div className="min-h-screen w-full bg-purple-bg text-white-text flex flex-col items-center gap-10 justify-center py-16">
           <div className="w-11/12 md:w-4/6 text-center md:text-left">
             <p className="text-base md:text-lg text-justify">
-              Diferente das vertentes do funk mainstream que têm em sua dança
-              uma presença mais pautada em aspectos sensuais, as danças nos
-              bailes de Bruxaria são marcadas principalmente por movimentos mais
-              robóticos. A dança, assim como a estética sonora, reforça a
+              Diferente das vertentes do funk <i>mainstream</i> que têm em sua
+              dança uma presença mais pautada em aspectos sensuais, as danças
+              nos bailes de Bruxaria são marcadas principalmente por movimentos
+              mais robóticos. A dança, assim como a estética sonora, reforça a
               identidade própria e distinta de qualquer outro gênero.
             </p>
           </div>
