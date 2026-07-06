@@ -258,7 +258,7 @@ function App() {
         <div className="w-11/12 md:w-4/6 text-center md:text-left">
           <p className="text-base md:text-lg text-justify">
             Nesta faixa, utilizamos outra sample: "Satisfaction" de Benny
-            Benassi. Faixa clássica da EDM e House Music dos anos 2000, é
+            Benassi. <i>Track</i> clássica da EDM e House Music dos anos 2000, é
             dançante e sensual, ao mesmo tempo que é tensa e robótica.
             Principalmente quando aliada ao seu vídeo-clipe, outro clássico.
             Entretanto, na nossa adaptação, tentamos deixar ela mais opressiva.
@@ -290,19 +290,19 @@ function App() {
 
         <div className="w-11/12 md:w-4/6 text-center md:text-left">
           <p className="text-base md:text-lg text-justify">
-            Esta faixa já é mais sombria. A sample original, "Rasamat Usratuna"
-            de Nasheed, fala sobre a união da família e amor. Contudo, nós a
+            Esta faixa é mais sombria. A sample original, "Rasamat Usratuna" de
+            Nasheed, fala sobre a união da família e amor. Contudo, nós a
             subvertemos em uma música para falar sobre o deturpação do
             capitalismo e que é "hora de acordar". Pois, entre as coisas que
-            vemos ser destruídas pelos "tentáculos do capitalismo" uma delas é:
+            vemos ser destruídas pelos "tentáculos do capitalismo", uma delas é:
             a família, a união.
             <br /> <br />
-            Passando do significado por trás da faixa, o uso de samples em árabe
-            é um recursos comum no mundo do funk. Datando dos anos 2010, com a
-            faixa "Passinho do Romano", samples em árabe são frequentemente
-            utilizadas em faixas do gênero. Uma faixa mais recente que utiliza
-            samples em árabe é: "HOJE EU VOU COMER NOVINHA" de Megabaile das
-            Areias, 2026.
+            Passando do significado por trás da composição, o uso de samples em
+            árabe é um recursos comum no mundo do funk. Datando dos anos 2010,
+            com a faixa "Passinho do Romano", samples em árabe são
+            frequentemente utilizadas em <i>tracks</i> do gênero. Uma música
+            mais recente que utiliza samples em árabe é: "HOJE EU VOU COMER
+            NOVINHA" de Megabaile das Areias, 2026.
             <br /> <br />
             Existem diversas motivações por trás disso, entre elas: a associação
             do Oriente Médio à luxo, riqueza e mistério; timbres e{" "}
@@ -326,9 +326,18 @@ function App() {
 
         <div className="w-11/12 md:w-4/6 text-center md:text-left">
           <p className="text-base md:text-lg text-justify">
-            Fortemente influenciada por músicas do DJ d.silvestre, ela utiliza
+            Fortemente influenciada por músicas do d.silvestre, ela utiliza
             sintetizadores graves, assobios agudos e risadas sinistras para
             construir uma ambientação sinistra e energética.
+            <br /> <br />É o tipo de faixa que, provavelmente, não seria
+            utilizada em um <i>set</i> comum. Entretanto, nem tudo no Submundo é
+            sobre fazer faixas dançantes ou comerciais para aquele público. Em
+            seu último albúm, "O Que As Mulheres Querem" de 2025, d.silvestre
+            cria composições longas, atmosféricas, muitas vezes, sem baterias e
+            carregadas sonoramente para criar o ambiente de caos e tensão. Isso
+            demonstra que existe espaço para experimentação dentro do gênero e
+            que, no fim, o objetivo não é necessariamente compor uma{" "}
+            <i>track</i> dançante, mas sim que passe a sensação desejada.
             <br /> <br />
             Com estas quatro faixas, acreditamos conseguir passar um panôrama do
             que é o Funk Submundo e seus principais elementos. Todas essas
@@ -421,14 +430,23 @@ function App() {
               bailes são realizados.
               <br />
               <br />
-              São Paulo é uma cidade chuvosa, o clima é frio durante cerca de 5
-              meses. Dias nublados, chuva e garoa fina também marcam os entornos
-              dos bailes. Mesmo assim eles não paravam. Então, os frequentadores
-              tornaram a necessidade de guarda-chuvas e casacos em expressão
-              artística. Guarda-chuvas que estampam marcas como Oakley e Nike se
-              tornaram comuns, junto com casacos corta-vento (material
-              impermeável) esportivo. Isso demonstra que um item necessário para
-              o bem estar acaba se tornando e refletindo: arte, propósito e
+              São Paulo é uma cidade chuvosa, o clima é frio durante cerca de
+              cinco meses. Dias nublados, chuva e garoa fina também marcam os
+              entornos dos bailes. Mesmo assim eles não paravam. Então, os
+              frequentadores tornaram a necessidade de casacos em expressão
+              artística. Devido a esses condições, casacos corta-vento (material
+              impermeável), esportivos e com cores chamativas passaram a compor
+              os <i>"kits"</i>, termo que se refere ao conjunto de roupa
+              utilizado. Ao mesmo tempo, no outros seis ou sete meses do ano,
+              São Paulo é quente e muitas festas ocorrem durante o período
+              diurno. E desses momentos, nascem os <i>"umbrellas"</i>. Trazidos
+              da cena rave e eletrônica de São Paulo, os guarda-chuvas serviam
+              como guarda-sol e para "fazer vento", com movimento de cima-baixo
+              sincronizados com a música, que abana quem está ao redor do
+              guarda-chuva. Contudo, com o tempo, passaram a estampar marcas
+              como Oakley, Nike e serem fabricados como materiais específicos,
+              como tecidos reflexivos. Isso demonstra que um item necessário
+              para o bem estar acaba se tornando e refletindo: arte, propósito e
               personalidade.
             </p>
           </div>
